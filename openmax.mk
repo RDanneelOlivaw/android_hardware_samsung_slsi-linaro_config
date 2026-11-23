@@ -242,3 +242,7 @@ endif
 ifeq ($(BOARD_USE_FLEXIBLE_P010), true)
 $(call soong_config_set_bool,openmax,USE_FLEXIBLE_P010,true)
 endif
+
+ifeq ($(BOARD_UNSUPPORT_10BIT), true)
+$(call soong_config_set_bool,openmax,UNSUPPORT_10BIT,true)
+endif
